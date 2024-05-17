@@ -12,7 +12,13 @@ arch:
   - i386
 init: false
 map:
+  - addons:rw
+  - all_addon_configs:rw
+  - backup:rw
+  - homeassistant_config:rw
+  - media:rw
   - share:rw
+  - ssl:rw
 options:
   message: "Hello world..."
 schema:
