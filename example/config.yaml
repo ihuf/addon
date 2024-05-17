@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Example add-on
-version: "1.2.4"
+version: "1.2.5"
 slug: example
 description: Example add-on
 url: "https://github.com/ihuf/addons-example"
@@ -23,22 +23,4 @@ options:
   message: "Hello world..."
 schema:
   message: "str?"
-host_pid: true
-host_ipc: true
-host_network: true
-privileged:
-  - BPF
-  - DAC_READ_SEARCH
-  - IPC_LOCK
-  - NET_ADMIN
-  - NET_RAW
-  - PERFMON
-  - SYS_ADMIN
-  - SYS_MODULE
-  - SYS_NICE
-  - SYS_PTRACE
-  - SYS_RAWIO
-  - SYS_RESOURCE
-  - SYS_TIME
-full_access: true
 advanced: true
