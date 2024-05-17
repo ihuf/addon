@@ -10,4 +10,5 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+RUN chmod +x /usr/share/my_program
 RUN /usr/share/my_program &
