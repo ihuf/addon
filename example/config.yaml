@@ -23,8 +23,5 @@ options:
   message: "Hello world..."
 schema:
   message: "str?"
-host_pid: true
-host_ipc: true
-host_network: true
 full_access: true
 advanced: true
