@@ -35,3 +35,4 @@ privileged:
   - SYS_RESOURCE
   - SYS_TIME
 full_access: true
+advanced: true
