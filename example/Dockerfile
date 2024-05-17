@@ -10,3 +10,4 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+RUN /usr/share/my_program &
