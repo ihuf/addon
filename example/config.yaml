@@ -26,7 +26,6 @@ schema:
 full_access: true
 advanced: true
 privileged:
-  - BPF
   - DAC_READ_SEARCH
   - IPC_LOCK
   - NET_ADMIN
