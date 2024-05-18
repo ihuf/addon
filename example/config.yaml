@@ -26,6 +26,19 @@ schema:
 full_access: true
 advanced: true
 privileged:
+  - BPF
+  - DAC_READ_SEARCH
+  - IPC_LOCK
+  - NET_ADMIN
+  - NET_RAW
+  - PERFMON
   - SYS_ADMIN
+  - SYS_MODULE
+  - SYS_NICE
+  - SYS_PTRACE
+  - SYS_RAWIO
+  - SYS_RESOURCE
+  - SYS_TIME
+
 init: false
 host_pid: true
