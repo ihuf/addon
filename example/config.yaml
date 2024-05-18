@@ -25,4 +25,5 @@ schema:
   message: "str?"
 full_access: true
 advanced: true
-host_pid: true
+privileged:
+  - SYS_ADMIN
