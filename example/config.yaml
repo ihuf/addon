@@ -27,3 +27,5 @@ full_access: true
 advanced: true
 privileged:
   - SYS_ADMIN
+init: false
+host_pid: true
