@@ -1,0 +1,49 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: OpenWeatherMap
+version: "1.0.0"
+slug: openweathermap
+description: Fetch weather data from OpenWeatherMap and publish to Home Assistant via MQTT Discovery
+url: "https://github.com/ihuf/addon/tree/main/openweathermap"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: services
+boot: auto
+init: false
+
+# Service dependencies
+services:
+  - mqtt:need
+
+# Configuration options
+options:
+  api_key: ""
+  latitude: ""
+  longitude: ""
+  units: "metric"
+  language: "en"
+  update_interval: 600
+  mqtt_host: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_username: ""
+  mqtt_password: ""
+
+# Configuration schema
+schema:
+  api_key: str
+  latitude: str?
+  longitude: str?
+  units: list(metric|imperial|standard)
+  language: str?
+  update_interval: int(60,3600)
+  mqtt_host: str?
+  mqtt_port: port?
+  mqtt_username: str?
+  mqtt_password: str?
+
+# Minimal permissions needed
+map:
+  - ssl:ro
