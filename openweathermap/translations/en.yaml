@@ -1,0 +1,31 @@
+configuration:
+  api_key:
+    name: API Key
+    description: Your OpenWeatherMap API key. Get one free at https://openweathermap.org/api
+  latitude:
+    name: Latitude
+    description: Location latitude. Leave empty to use Home Assistant's configured location.
+  longitude:
+    name: Longitude
+    description: Location longitude. Leave empty to use Home Assistant's configured location.
+  units:
+    name: Units
+    description: Temperature and wind speed units (metric = Celsius/m/s, imperial = Fahrenheit/mph)
+  language:
+    name: Language
+    description: Language code for weather descriptions (e.g., en, de, fr, es)
+  update_interval:
+    name: Update Interval
+    description: How often to fetch weather data, in seconds (60-3600)
+  mqtt_host:
+    name: MQTT Host
+    description: MQTT broker hostname. Default is the Mosquitto add-on.
+  mqtt_port:
+    name: MQTT Port
+    description: MQTT broker port number
+  mqtt_username:
+    name: MQTT Username
+    description: MQTT authentication username (optional)
+  mqtt_password:
+    name: MQTT Password
+    description: MQTT authentication password (optional)
